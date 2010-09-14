@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "0.4.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Pelle Braendgaard", "Blaine Cook", "Larry Halff", "Jesse Clark", "Jon Crosby", "Seth Fitzsimmons", "Matt Sanford", "Aaron Quint"]
-  s.date = %q{2010-09-01}
+  s.authors = ["Bert Goethals", "Pelle Braendgaard", "Blaine Cook", "Larry Halff", "Jesse Clark", "Jon Crosby", "Seth Fitzsimmons", "Matt Sanford", "Aaron Quint"]
+  s.date = %q{2010-10-14}
   s.default_executable = %q{oauth}
   s.description = %q{OAuth Core Ruby implementation}
   s.email = %q{oauth-ruby@googlegroups.com}
@@ -76,9 +76,9 @@ Gem::Specification.new do |s|
      "lib/oauth/tokens/server_token.rb",
      "lib/oauth/tokens/token.rb",
      "oauth.gemspec",
-     "tasks/deployment.rake",
-     "tasks/environment.rake",
-     "tasks/website.rake",
+     "lib/tasks/deployment.rake",
+     "lib/tasks/environment.rake",
+     "lib/tasks/website.rake",
      "test/cases/oauth_case.rb",
      "test/cases/spec/1_0-final/test_construct_request_url.rb",
      "test/cases/spec/1_0-final/test_normalize_request_parameters.rb",

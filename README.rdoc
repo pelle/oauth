@@ -30,9 +30,18 @@ Start the process by requesting a token
   session[:request_token] = @request_token
   redirect_to @request_token.authorize_url
 
-When user returns create an access_token
+When the user returns restore the `request_token`
+
+  @request_token = session[:request_token]
+
+Then create an `access_token`
 
   @access_token = @request_token.get_access_token
+  # You might need to provide the oauth_verifier param:
+  @access_token = @request_token.get_access_token(oauth_verifier: params[:oauth_verifier])
+
+You should now be able to access the provider data
+
   @photos = @access_token.get('/photos.xml')
 
 Now that you have an access token, you can use Typhoeus to interact with the OAuth provider if you choose.

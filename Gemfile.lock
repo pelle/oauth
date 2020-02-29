@@ -22,7 +22,7 @@ GEM
     mocha (0.9.8)
       rake
     rack (1.1.0)
-    rake (0.8.7)
+    rake (13.0.1)
     rubyforge (2.0.4)
       json_pure (>= 1.1.7)
     typhoeus (0.1.31)

@@ -13,7 +13,8 @@ GEM
     eventmachine (0.12.10)
     gemcutter (0.4.1)
       json_pure
-    git (1.2.5)
+    git (1.11.0)
+      rchardet (~> 1.8)
     jeweler (1.4.0)
       gemcutter (>= 0.1.0)
       git (>= 1.2.5)
@@ -23,6 +24,7 @@ GEM
       rake
     rack (1.1.0)
     rake (0.8.7)
+    rchardet (1.8.0)
     rubyforge (2.0.4)
       json_pure (>= 1.1.7)
     typhoeus (0.1.31)
